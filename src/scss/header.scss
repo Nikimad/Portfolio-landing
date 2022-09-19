@@ -1,0 +1,49 @@
+.header {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+
+        padding: 1em 0;
+        .logo {
+            display: block;
+            height: 50px;
+            width: 50px;
+        }
+
+        .nav {
+            gap: 1.5em;
+            margin-left: auto; 
+        }
+
+        .lang-switcher {
+            margin-left: auto;
+            button {
+                color: inherit;
+            }
+        }
+
+        .nav-toogler {
+            flex-direction: column;
+            justify-content: space-between;
+
+            height: 28px;
+            width: 50px;
+            .line {
+                height: 3px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $break-point) {
+    .header {
+        .navbar {
+            .lang-switcher {
+                margin-left: 0;
+            }
+        }
+    }
+}

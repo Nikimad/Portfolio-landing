@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../assets/fonts/Merriweather/Merriweather-Bold.ttf");
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  font: inherit;
+  background-color: transparent;
+  padding: 0;
+}
+
+.body {
+  font-size: 20px;
+  line-height: 2;
+  font-family: "Inter";
+  color: #fff;
+  background-color: #000;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: "Merriweather";
+}
+
+.h2,
+.h4 {
+  color: #BDAE82;
+}
+
+.display-md-flex {
+  display: flex;
+}
+
+.display-md-none {
+  display: none;
+}
+
+@media screen and (min-width: 45rem) {
+  .display-sm-none {
+    display: none;
+  }
+  .display-sm-flex {
+    display: flex;
+  }
+}
+.container {
+  width: min(1280px, 100% - 60px);
+  margin-inline: auto;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+}
+.header .navbar .logo {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.header .navbar .nav {
+  gap: 1.5em;
+  margin-left: auto;
+}
+.header .navbar .lang-switcher {
+  margin-left: auto;
+}
+.header .navbar .lang-switcher button {
+  color: inherit;
+}
+.header .navbar .nav-toogler {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 28px;
+  width: 50px;
+}
+.header .navbar .nav-toogler .line {
+  height: 3px;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 45rem) {
+  .header .navbar .lang-switcher {
+    margin-left: 0;
+  }
+}
+.banner .container > * {
+  max-width: 24em;
+}
+
+/*# sourceMappingURL=style.css.map */
