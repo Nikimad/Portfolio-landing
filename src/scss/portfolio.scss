@@ -1,0 +1,22 @@
+.portfolio {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+
+        margin-bottom: 3rem;
+    }
+
+    .photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+        .photo {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

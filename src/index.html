@@ -40,68 +40,68 @@
                     happy moments of life together with professional
                     photographer Alexa Rise
                 </p>
-                <button>Hire me</button>
+                <button class="btn btn_prim">Hire me</button>
             </div>
         </section>
-        <section id="skills">
+        <section class="section skills" id="skills">
             <div class="container">
-                <h2 class="h2 section-title">Skills</h2>
+                <h2 class="h2 section-title-wrapper"><span class="title">Skills</span></h2>
                 <ul class="skills-list">
                     <li class="skill">
-                        <svg class="icon"></svg>
+                        <div class="icon" id="camera"></div>
                         <h3 class="skill-title">Digital photography</h3>
                         <p class="skill-description">High-quality photos in the studio and on the nature</p>
                     </li>
                     <li class="skill">
-                        <svg class="icon"></svg>
+                        <div class="icon" id="video"></div>
                         <h3 class="skill-title">Video shooting</h3>
                         <p class="skill-description">Capture your moments so that they always stay with you</p>
                     </li>
                     <li class="skill">
-                        <svg class="icon"></svg>
+                        <div class="icon" id="image"></div>
                         <h3 class="skill-title">Retouch</h3>
                         <p class="skill-description">I strive to make photography surpass reality</p>
                     </li>
                     <li class="skill">
-                        <svg class="icon"></svg>
+                        <div class="icon" id="mic"></div>
                         <h3 class="skill-title">Audio</h3>
                         <p class="skill-description">Professional sounds recording for video, advertising, portfolio</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="portfolio">
+        <section class="section portfolio" id="portfolio">
             <div class="container">
-                <h2 class="h2 section-title">Portfolio</h2>
+                <h2 class="h2 section-title-wrapper"><span class="title">Portfolio</span></h2>
                 <ul class="buttons">
-                    <button>Winter</button>
-                    <button>Spring</button>
-                    <button>Summer</button>
-                    <button>Autumn</button>
+                    <button class="btn btn_trans">Winter</button>
+                    <button class="btn btn_trans">Spring</button>
+                    <button class="btn btn_trans">Summer</button>
+                    <button class="btn btn_trans">Autumn</button>
                 </ul>
                 <ul class="photos">
-                    <li class="img-container"><img src="" alt="" class="photo"></li>
-                    <li class="img-container"><img src="" alt="" class="photo"></li>
-                    <li class="img-container"><img src="" alt="" class="photo"></li>
-                    <li class="img-container"><img src="" alt="" class="photo"></li>
-                    <li class="img-container"><img src="" alt="" class="photo"></li>
-                    <li class="img-container"><img src="" alt="" class="photo"></li>
+                    <li><img src="./assets/img/autumn/1.jpg" alt="" class="photo"></li>
+                    <li><img src="./assets/img/autumn/2.jpg" alt="" class="photo"></li>
+                    <li><img src="./assets/img/autumn/3.jpg" alt="" class="photo"></li>
+                    <li><img src="./assets/img/autumn/4.jpg" alt="" class="photo"></li>
+                    <li><img src="./assets/img/autumn/5.jpg" alt="" class="photo"></li>
+                    <li><img src="./assets/img/autumn/6.jpg" alt="" class="photo"></li>
                 </ul>
             </div>
         </section>
-        <section id="video">
+        <section class="section video" id="video">
             <div class="container">
-                <h2 class="h2 section-title">Video</h2>
+                <h2 class="h2 section-title-wrapper"><span class="title">Video</span></h2>
                 <div class="video-container">
-                    <img src="" alt="" class="plug">
+                    <img src="./assets/img/video-player.jpg" alt="" class="plug">
                 </div>
             </div>
         </section>
-        <section id="price">
+        <section class="section price" id="price">
             <div class="container">
-                <h2 class="h2 section-title">Price</h2>
+                <h2 class="h2 section-title-wrapper"><span class="title">Price</span></h2>
                 <ul class="price-list">
-                    <li class="price">
+                    <li class="price-item">
                         <h3 class="h3 price-title">Standard</h3>
                         <h4 class="h4 price-num">500 $</h4>
                         <p class="price-description">One location</p>
@@ -109,9 +109,9 @@
                         <p class="price-description">12 photos in retouch</p>
                         <p class="price-description">Readiness 2-3 weeks</p>
                         <p class="price-description">Make up, visage</p>
-                        <button>Order shooting</button>
+                        <button class="btn btn_prim">Order shooting</button>
                     </li>
-                    <li class="price">
+                    <li class="price-item">
                         <h3 class="h3 price-title">Premium</h3>
                         <h4 class="h4 price-num">700 $</h4>
                         <p class="price-description">One or two locations</p>
@@ -119,9 +119,9 @@
                         <p class="price-description">20 photos in retouch</p>
                         <p class="price-description">Readiness 1-2 weeks</p>
                         <p class="price-description">Make up, visage</p>
-                        <button>Order shooting</button>
+                        <button class="btn btn_prim">Order shooting</button>
                     </li>
-                    <li class="price">
+                    <li class="price-item">
                         <h3 class="h3 price-title">Gold</h3>
                         <h4 class="h4 price-num">1000 $</h4>
                         <p class="price-description">Three locations or more</p>
@@ -129,19 +129,19 @@
                         <p class="price-description">50 photos in retouch</p>
                         <p class="price-description">Readiness 1 week</p>
                         <p class="price-description">Make up, visage, hairstyle</p>
-                        <button>Order shooting</button>
+                        <button class="btn btn_prim">Order shooting</button>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
                 <h2 class="h2 section-title">Contacts</h2>
                 <form class="contacts-form">
                     <input type="email" placeholder="E-mail">
                     <input type="tel" placeholder="Phone">
                     <textarea placeholder="Message"></textarea>
-                    <input type="submit" value="Send message">
+                    <input type="submit" class="btn btn_prim" value="Send message">
                 </form>
             </div>
         </section>

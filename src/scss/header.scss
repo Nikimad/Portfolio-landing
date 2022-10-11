@@ -10,16 +10,17 @@
             display: block;
             height: 50px;
             width: 50px;
+
+            margin-right: auto;
         }
 
         .nav {
             gap: 1.5em;
-            margin-left: auto; 
         }
 
         .lang-switcher {
-            margin-left: auto;
             button {
+                font: inherit;
                 color: inherit;
             }
         }
@@ -33,16 +34,6 @@
             .line {
                 height: 3px;
                 background-color: #fff;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: $break-point) {
-    .header {
-        .navbar {
-            .lang-switcher {
-                margin-left: 0;
             }
         }
     }

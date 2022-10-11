@@ -1,0 +1,33 @@
+.price {
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1.25rem;
+        row-gap: 2.5rem;
+    }
+    &-item {
+        max-width: calc(22.5rem - 6px);
+        width: 100%;
+        text-align: center;
+        border: 3px solid $prim;
+
+        padding-block: 2rem;
+
+        .price-title {
+            margin: 0;
+        }
+
+        .price-num {
+            margin-block: 1rem;
+        }
+
+        .price-description {
+            margin: 0;
+        }
+
+        .btn {
+            margin-top: 2.4rem;
+        }
+    }
+}

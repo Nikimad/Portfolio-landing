@@ -23,20 +23,27 @@ ul {
 button {
     border: none;
 
-    font: inherit;
-
     background-color: transparent;
 
     padding: 0;
 }
 
-.body {
+html {
     font-size: $fs-prim;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
     line-height: $lh-prim;
     font-family: $ff-prim;
     color: #fff;
 
     background-color: #000;
+
+    margin: 0;
 }
 
 .h1,

@@ -1,0 +1,16 @@
+
+.btn {
+    font: inherit;
+
+    height: 2.74rem;
+    width: 11rem;
+    border: 1px solid $prim;
+
+    &_prim {
+        background-color: $prim;
+    }
+
+    &_trans {
+        color: $prim;
+    }
+}

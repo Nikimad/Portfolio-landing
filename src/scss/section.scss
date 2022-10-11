@@ -1,0 +1,38 @@
+.section {
+    &-title-wrapper {
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+
+        margin: 0 0 3rem;
+
+        &::after {
+            display: block;
+
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            z-index: -1;
+
+            transform: translate(-50%, -50%);
+
+            content: "";
+
+            height: 1px;
+            width: min(100%, 35rem);
+
+            background-color: $prim;
+        }
+
+        .title {
+            text-align: center;
+
+            background-color: #000;
+            
+            padding-inline: 1rem;
+        }
+    }
+}
