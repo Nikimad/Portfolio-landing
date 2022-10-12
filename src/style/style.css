@@ -29,13 +29,12 @@ html {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .body {
   line-height: 2;
   font-family: "Inter";
-  color: #fff;
-  background-color: #000;
   margin: 0;
 }
 
@@ -44,11 +43,6 @@ html {
 .h3,
 .h4 {
   font-family: "Merriweather";
-}
-
-.h2,
-.h4 {
-  color: #BDAE82;
 }
 
 .display-md-flex {
@@ -92,6 +86,15 @@ html {
   font: inherit;
   color: inherit;
 }
+.header .navbar .theme-switcher {
+  height: 2.25rem;
+  width: 2.25rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
 .header .navbar .nav-toogler {
   flex-direction: column;
   justify-content: space-between;
@@ -100,7 +103,6 @@ html {
 }
 .header .navbar .nav-toogler .line {
   height: 3px;
-  background-color: #fff;
 }
 
 .banner .container > * {
@@ -112,12 +114,6 @@ html {
   height: 2.74rem;
   width: 11rem;
   border: 1px solid #BDAE82;
-}
-.btn_prim {
-  background-color: #BDAE82;
-}
-.btn_trans {
-  color: #BDAE82;
 }
 
 .section-title-wrapper {
@@ -136,11 +132,9 @@ html {
   content: "";
   height: 1px;
   width: min(100%, 35rem);
-  background-color: #BDAE82;
 }
 .section-title-wrapper .title {
   text-align: center;
-  background-color: #000;
   padding-inline: 1rem;
 }
 
@@ -149,6 +143,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 4rem;
+  row-gap: 3.75rem;
 }
 .skills-list .skill {
   text-align: center;
@@ -244,17 +239,86 @@ html {
 .contacts-form input[type=tel],
 .contacts-form textarea {
   width: 100%;
-  color: #fff;
   font: inherit;
-  background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #BDAE82;
   resize: none;
   padding: 0.25rem 1rem;
 }
-.contacts-form input[type=email]::placeholder,
-.contacts-form input[type=tel]::placeholder,
-.contacts-form textarea::placeholder {
+
+.body[data-color-schema=black] {
+  color: #fff;
+  background-color: #000;
+}
+.body[data-color-schema=black] .section-title-wrapper::after {
+  background-color: #BDAE82;
+}
+.body[data-color-schema=black] .section-title-wrapper .title {
   color: #BDAE82;
+  background-color: #000;
+}
+.body[data-color-schema=black] .btn_prim {
+  background-color: #BDAE82;
+}
+.body[data-color-schema=black] .btn_sec {
+  color: #BDAE82;
+}
+.body[data-color-schema=black] .header .navbar .logo {
+  fill: #fff;
+}
+.body[data-color-schema=black] .header .navbar .theme-switcher {
+  background-image: url("../assets/svg/sun.svg");
+}
+.body[data-color-schema=black] .header .navbar .nav-toogler .line {
+  background-color: #fff;
+}
+.body[data-color-schema=black] .contacts-form input[type=email],
+.body[data-color-schema=black] .contacts-form input[type=tel],
+.body[data-color-schema=black] .contacts-form textarea {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.body[data-color-schema=black] .contacts-form input[type=email]::placeholder,
+.body[data-color-schema=black] .contacts-form input[type=tel]::placeholder,
+.body[data-color-schema=black] .contacts-form textarea::placeholder {
+  color: #BDAE82;
+}
+.body[data-color-schema=white] {
+  color: #000;
+  background-color: #fff;
+}
+.body[data-color-schema=white] .section-title-wrapper::after {
+  background-color: #000;
+}
+.body[data-color-schema=white] .section .title {
+  color: #000;
+  background-color: #fff;
+}
+.body[data-color-schema=white] .btn_prim {
+  background-color: #fff;
+}
+.body[data-color-schema=white] .btn_sec {
+  color: inherit;
+  background-color: #BDAE82;
+}
+.body[data-color-schema=white] .header .navbar .logo {
+  fill: #000;
+}
+.body[data-color-schema=white] .header .navbar .theme-switcher {
+  background-image: url("../assets/svg/moon.svg");
+}
+.body[data-color-schema=white] .header .navbar .nav-toogler .line {
+  background-color: #000;
+}
+.body[data-color-schema=white] .contacts-form input[type=email],
+.body[data-color-schema=white] .contacts-form input[type=tel],
+.body[data-color-schema=white] .contacts-form textarea {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.body[data-color-schema=white] .contacts-form input[type=email]::placeholder,
+.body[data-color-schema=white] .contacts-form input[type=tel]::placeholder,
+.body[data-color-schema=white] .contacts-form textarea::placeholder {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

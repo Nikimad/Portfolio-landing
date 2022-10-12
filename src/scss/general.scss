@@ -34,14 +34,12 @@ html {
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .body {
     line-height: $lh-prim;
     font-family: $ff-prim;
-    color: #fff;
-
-    background-color: #000;
 
     margin: 0;
 }
@@ -53,10 +51,6 @@ html {
     font-family: $ff-sec;
 }
 
-.h2,
-.h4 {
-    color: $prim;
-}
 
 .display-md-flex {
     display: flex;

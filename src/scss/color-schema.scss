@@ -1,0 +1,124 @@
+.body {
+    &[data-color-schema="black"] {
+        color: #fff;
+        background-color: #000;
+
+        .section {
+            &-title-wrapper {
+                &::after {
+                    background-color: $prim;
+                }
+
+                .title {
+                    color: $prim;
+                    background-color: #000;
+                }
+            }
+        }
+
+        .btn {
+    &_prim {
+        background-color: $prim;
+    }
+
+    &_sec {
+        color: $prim;
+    }
+        }
+
+        .header {
+            .navbar {
+                .logo {
+                    fill: #fff;
+                }
+
+                .theme-switcher {
+                    background-image: url('../assets/svg/sun.svg');
+                }
+
+                .nav-toogler {
+                    .line {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+
+        .contacts {
+            &-form {
+                input[type="email"],
+                input[type="tel"],
+                textarea {
+                    color: #fff;
+                    background-color: rgba(#000, 0.5);
+        
+                    &::placeholder {
+                        color: $prim;
+                    }
+                }
+            }
+        }
+    }
+
+    &[data-color-schema="white"] {
+        color: #000;
+        background-color: #fff;
+
+        .section {
+            &-title-wrapper {
+                &::after {
+                    background-color: #000;
+                }
+            }
+
+            .title {
+                color: #000;
+                background-color: #fff;
+            }
+        }
+
+        .btn {
+    &_prim {
+        background-color: #fff;
+    }
+
+    &_sec {
+        color: inherit;
+        background-color: $prim;
+    }
+        }
+
+        .header {
+            .navbar {
+                .logo {
+                    fill: #000;
+                }
+
+                .theme-switcher {
+                    background-image: url('../assets/svg/moon.svg');
+                }
+
+                .nav-toogler {
+                    .line {
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+
+        .contacts {
+            &-form {
+                input[type="email"],
+                input[type="tel"],
+                textarea {
+                    color: #000;
+                    background-color: rgba(#fff, 0.5);
+        
+                    &::placeholder {
+                        color: #000;
+                    }
+                }
+            }
+        }        
+    }
+}

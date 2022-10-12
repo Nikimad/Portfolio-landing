@@ -18,18 +18,12 @@
         textarea {
             width: 100%;
 
-            color: #fff;
             font: inherit;
-            background-color: rgba(#000000, 0.5);
             border: 2px solid $prim;
 
             resize: none;
 
             padding: 0.25rem 1rem;
-
-            &::placeholder {
-                color: $prim;
-            }
         }
     }
 }
