@@ -1,8 +1,43 @@
 
 .btn {
+    position: relative;
+
     font: inherit;
 
     height: 2.74rem;
     width: 11rem;
     border: 1px solid $prim;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+
+    .ripple {
+        position: absolute;
+
+        background-color: #fff;
+
+        border-radius: 100%;
+
+        animation: boom 1s;
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes boom {
+    from {
+        width: 0px;
+        height: 0px;
+
+        opacity: 1;
+    }   
+    to {
+        width: 500px;
+        height: 500px;
+
+        opacity: 0;
+    }
 }

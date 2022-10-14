@@ -17,13 +17,17 @@
         }
 
         .btn {
-    &_prim {
-        background-color: $prim;
-    }
+            &_prim {
+                background-color: $prim;
+            }
 
-    &_sec {
-        color: $prim;
-    }
+            &_sec {
+                color: $prim;
+
+                &:hover {
+                    background-color: $prim;
+                }
+            }
         }
 
         .header {
@@ -78,14 +82,22 @@
         }
 
         .btn {
-    &_prim {
-        background-color: #fff;
-    }
+            &_prim {
+                background-color: #fff;
 
-    &_sec {
-        color: inherit;
-        background-color: $prim;
-    }
+                &:hover {
+                    background-color: $prim;
+                }
+            }
+
+            &_sec {
+                color: inherit;
+                background-color: $prim;
+
+                &:hover {
+                    background-color: #000;
+                }
+            }
         }
 
         .header {
@@ -120,5 +132,14 @@
                 }
             }
         }        
+    }
+
+    .btn {
+        &_prim,
+        &_sec {
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 }

@@ -110,12 +110,35 @@ html {
 }
 
 .btn {
+  position: relative;
   font: inherit;
   height: 2.74rem;
   width: 11rem;
   border: 1px solid #BDAE82;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.btn .ripple {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: boom 1s;
+  transform: translate(-50%, -50%);
 }
 
+@keyframes boom {
+  from {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  to {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
 .section-title-wrapper {
   display: flex;
   justify-content: center;
@@ -262,6 +285,9 @@ html {
 .body[data-color-schema=black] .btn_sec {
   color: #BDAE82;
 }
+.body[data-color-schema=black] .btn_sec:hover {
+  background-color: #BDAE82;
+}
 .body[data-color-schema=black] .header .navbar .logo {
   fill: #fff;
 }
@@ -296,9 +322,15 @@ html {
 .body[data-color-schema=white] .btn_prim {
   background-color: #fff;
 }
+.body[data-color-schema=white] .btn_prim:hover {
+  background-color: #BDAE82;
+}
 .body[data-color-schema=white] .btn_sec {
   color: inherit;
   background-color: #BDAE82;
+}
+.body[data-color-schema=white] .btn_sec:hover {
+  background-color: #000;
 }
 .body[data-color-schema=white] .header .navbar .logo {
   fill: #000;
@@ -319,6 +351,9 @@ html {
 .body[data-color-schema=white] .contacts-form input[type=tel]::placeholder,
 .body[data-color-schema=white] .contacts-form textarea::placeholder {
   color: #000;
+}
+.body .btn_prim:hover, .body .btn_sec:hover {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
